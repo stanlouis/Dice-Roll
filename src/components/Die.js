@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
-
+import React, { Component } from 'react';
+import './Die.css';
 export default class Die extends Component {
   render() {
+    const {face} = this.props;
     return (
-      <div>
-        <h1>Roll it</h1>
-      </div>
-    )
+        <i className={`Die fas fa-dice-${face} fa-10x`} />
+    );
   }
 }
